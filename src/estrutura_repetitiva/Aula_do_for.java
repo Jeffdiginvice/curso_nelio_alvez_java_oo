@@ -23,6 +23,7 @@ public class Aula_do_for {
 		}while(resp != 'n');
 		
 		System.out.println("Porgrama encerrado!");
+		
 		sc.close();
 
 	}
