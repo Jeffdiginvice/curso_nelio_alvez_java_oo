@@ -19,7 +19,24 @@ public class Program {
 		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-		System.out.println(product);
+		System.out.println();
+		System.out.println("Product data: " + product);
+		
+		System.out.println();
+		System.out.println("Enter the number of products to be added in stock: ");
+		int quantity = sc.nextInt();
+		product.AddProducts(quantity);
+		
+		System.out.println();
+		System.out.println("Updatet data: " + product);
+		
+		System.out.println();
+		System.out.println("Enter the number of products to be removed in stock: ");
+		quantity = sc.nextInt();
+		product.RemoveProducts(quantity);
+		
+		System.out.println();
+		System.out.println("Updatet data: " + product);
 		
 		sc.close();
 
