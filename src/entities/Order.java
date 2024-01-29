@@ -6,10 +6,6 @@ import entities.enums.OrderStatus;
 
 public class Order {
 
-	@Override
-	public String toString() {
-		return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
-	}
 
 	private Integer id;
 	private Date moment;
@@ -48,5 +44,11 @@ public class Order {
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
+	
+	@Override
+	public String toString() {
+		return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
+	}
+
 
 }
